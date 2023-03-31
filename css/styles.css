@@ -516,12 +516,14 @@ ul {
   height: 24px;
 }
 .footer-form-wrapper {
-  margin-left: auto;
-}
-.footer-form {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+.footer-form {
+  width: 453px;
+  height: 80px;
+  margin-left: auto;
 }
 .footer-form-call {
   display: block;
