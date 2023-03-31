@@ -419,8 +419,26 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form-wrapper">
+          <p class="footer-form-call">Subscribe</p>
+          <form class="footer-form">
+            <input
+              class="footer-form-input"
+              name="user_email"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="button footer-form-button" type="submit">
+              Subscribe
+              <svg class="footer-button-icon">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!--Modal-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button close-button" data-modal-close>
@@ -433,7 +451,13 @@
           <label class="form-label">
             <span class="form-input-hint">Name</span>
             <div class="form-icon-wrapper">
-              <input type="text" class="form-input" required />
+              <input
+                type="text"
+                class="form-input"
+                name="user_name"
+                title="Please type your name"
+                required
+              />
               <svg class="form-input-icon">
                 <use href="images/icons.svg#icon-person-black"></use>
               </svg>
@@ -442,7 +466,13 @@
           <label class="form-label">
             <span class="form-input-hint">Phone</span>
             <div class="form-icon-wrapper">
-              <input type="phone" class="form-input" required />
+              <input
+                type="phone"
+                class="form-input"
+                name="user_phone"
+                title="Please type your phone"
+                required
+              />
               <svg class="form-input-icon">
                 <use href="images/icons.svg#icon-phone-black"></use>
               </svg>
@@ -451,7 +481,13 @@
           <label class="form-label">
             <span class="form-input-hint">Email</span>
             <div class="form-icon-wrapper">
-              <input type="email" class="form-input" required />
+              <input
+                type="email"
+                class="form-input"
+                name="user_email"
+                title="Please type your email"
+                required
+              />
               <svg class="form-input-icon">
                 <use href="images/icons.svg#icon-email-black"></use>
               </svg>
@@ -471,6 +507,8 @@
               class="form-agreement-checkbox visually-hidden"
               type="checkbox"
               id="form-agreement"
+              name="user_agreement"
+              value="true"
               required
             />
             <label class="form-agreement-label" for="form-agreement">

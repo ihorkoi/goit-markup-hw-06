@@ -515,7 +515,56 @@ ul {
   width: 24px;
   height: 24px;
 }
+.footer-form-wrapper {
+  margin-left: auto;
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer-form-call {
+  display: block;
+  margin-bottom: 16px;
+}
+.footer-form-input {
+  width: 264px;
+  height: 40px;
 
+  padding-left: 16px;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+.footer-form-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form-button {
+  display: flex;
+  width: 165px;
+  height: 40px;
+
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  border: var(--accent-main-color);
+  border-radius: 4px;
+}
+.footer-form-button:hover,
+.footer-form-button:focus {
+  border: var(--accent-secondary-color);
+}
+.footer-button-icon {
+  width: 24px;
+  height: 24px;
+}
 /*----------------------------------------MODAL-----------------------------------------*/
 
 .backdrop {
@@ -630,6 +679,9 @@ ul {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus + .form-input-icon {
   fill: var(--accent-main-color);
@@ -694,6 +746,12 @@ ul {
 
   border: 1px solid #2e2f42;
   border-radius: 2px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-agreement-checkbox:focus + .form-agreement-label span {
+  border: 1px solid var(--accent-main-color);
 }
 .form-custom-icon {
   width: 10px;
