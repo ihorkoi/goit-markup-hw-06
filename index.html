@@ -450,57 +450,59 @@
           </svg>
         </button>
         <p class="form-header">Leave your contacts and we will call you back</p>
-        <form class="form">
-          <label class="form-label">
+        <form class="form-modal">
+          <label class="form-label" for="user_name">
             <span class="form-input-hint">Name</span>
-            <div class="form-icon-wrapper">
-              <input
-                type="text"
-                class="form-input"
-                name="user_name"
-                title="Please type your name"
-                required
-              />
-              <svg class="form-input-icon">
-                <use href="images/icons.svg#icon-person-black"></use>
-              </svg>
-            </div>
           </label>
-          <label class="form-label">
+          <div class="form-icon-wrapper">
+            <input
+              type="text"
+              class="form-input"
+              name="user_name"
+              id="user_name"
+              title="Please type your name"
+              required
+            />
+            <svg class="form-input-icon">
+              <use href="images/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="user_phone">
             <span class="form-input-hint">Phone</span>
-            <div class="form-icon-wrapper">
-              <input
-                type="phone"
-                class="form-input"
-                name="user_phone"
-                title="Please type your phone"
-                required
-              />
-              <svg class="form-input-icon">
-                <use href="images/icons.svg#icon-phone-black"></use>
-              </svg>
-            </div>
           </label>
-          <label class="form-label">
+          <div class="form-icon-wrapper">
+            <input
+              type="tel"
+              class="form-input"
+              name="user_phone"
+              id="user_phone"
+              title="Please type your phone"
+              required
+            />
+            <svg class="form-input-icon">
+              <use href="images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="user_email">
             <span class="form-input-hint">Email</span>
-            <div class="form-icon-wrapper">
-              <input
-                type="email"
-                class="form-input"
-                name="user_email"
-                title="Please type your email"
-                required
-              />
-              <svg class="form-input-icon">
-                <use href="images/icons.svg#icon-email-black"></use>
-              </svg>
-            </div>
           </label>
-          <label class="form-label-comment" id="form-comment">
+          <div class="form-icon-wrapper">
+            <input
+              type="email"
+              class="form-input"
+              name="user_email"
+              id="user_email"
+              title="Please type your email"
+              required
+            />
+            <svg class="form-input-icon">
+              <use href="images/icons.svg#icon-email-black"></use>
+            </svg>
+          </div>
+          <label class="form-label-comment">
             <span class="form-input-hint">Comment</span>
             <textarea
               name="user_comment"
-              id="form-comment"
               class="form-comment"
               placeholder="Text input"
             ></textarea>
@@ -526,7 +528,7 @@
               ></label
             >
           </div>
-          <buttton class="button button-submit" type="submit">Send</buttton>
+          <input class="button-submit" type="submit" value="Send" />
         </form>
       </div>
     </div>
