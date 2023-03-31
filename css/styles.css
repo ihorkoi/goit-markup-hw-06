@@ -526,6 +526,8 @@ ul {
 .footer-form-call {
   display: block;
   margin-bottom: 16px;
+
+  font-weight: 500;
 }
 .footer-form-input {
   width: 264px;
@@ -726,8 +728,7 @@ ul {
 .policy-wrapper {
   margin-bottom: 24px;
 }
-.form-agreement {
-}
+
 .form-agreement-label {
   display: flex;
   align-items: center;
